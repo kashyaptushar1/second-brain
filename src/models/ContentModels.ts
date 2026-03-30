@@ -51,4 +51,4 @@ const ContentModel =
   mongoose.model<IContent>("Content", ContentSchema);
 
 
-  export default ContentModel
+  export default ContentModel;

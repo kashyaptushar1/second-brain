@@ -7,7 +7,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "start": "node dist/index.js",
-    "dev": "nodemon --watch src --exec node --loader ts-node/esm src/index.ts"
+   "dev": "tsx watch src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -25,8 +25,10 @@
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/mongoose": "^5.11.96",
+    "@types/node": "^25.5.0",
     "nodemon": "^3.1.14",
-    "typescript": "^5.9.3",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   }
 }

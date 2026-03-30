@@ -3,6 +3,7 @@ import userRouter from "./routes/userRoutes.js";
 import { connect } from "./db/db.js";
 import contantRouter from "./routes/contentRoutes.js";
 import { PORT } from "./config/env.js";
+import brainRouter from "./routes/brainRoutes.js";
 
 
 
@@ -12,6 +13,7 @@ app.use(express.json());
 
 app.use("/user",userRouter)
 app.use("/content",contantRouter)
+app.use("/brain",brainRouter)
 
 
 app.listen(PORT,()=>{
